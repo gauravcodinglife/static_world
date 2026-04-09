@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn DevOps from basics to advanced. Covers Linux, Git, Docker, Kubernetes, CI/CD, Terraform, and monitoring.">
+  <title>DevOps Learning Path | Coding World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">Coding<span>World</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cloud.html">Cloud</a></li>
+      <li><a href="devops.html" class="active">DevOps</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <header class="page-header">
+    <h1><i class="fas fa-infinity"></i> DevOps Learning Path</h1>
+    <p>Master the tools and practices that bridge development and operations</p>
+  </header>
+
+  <main class="content">
+
+    <!-- MODULE 1 -->
+    <section class="module" id="devops-fundamentals">
+      <h2>Module 1: DevOps Fundamentals</h2>
+
+      <h3>What Is DevOps?</h3>
+      <p>DevOps is a set of practices, cultural philosophies, and tools that combines software development (Dev) and IT operations (Ops). It aims to shorten the systems development lifecycle while delivering features, fixes, and updates frequently and reliably. DevOps is not a tool or a job title—it is a culture and methodology.</p>
+
+      <h3>Core Principles</h3>
+      <ul>
+        <li><strong>Culture of Collaboration:</strong> Break down silos between development, operations, and QA teams. Everyone shares responsibility for the product.</li>
+        <li><strong>Automation:</strong> Automate repetitive tasks like testing, deployment, infrastructure provisioning, and monitoring to reduce human error and increase speed.</li>
+        <li><strong>Continuous Improvement:</strong> Constantly measure, learn, and improve processes through feedback loops and retrospectives.</li>
+        <li><strong>Infrastructure as Code:</strong> Manage infrastructure through version-controlled code rather than manual configuration.</li>
+        <li><strong>Monitoring and Feedback:</strong> Continuously monitor applications and infrastructure to detect issues early and gather data for improvement.</li>
+      </ul>
+
+      <h3>The DevOps Lifecycle</h3>
+      <p>The DevOps lifecycle is an infinite loop of interconnected phases that enable rapid, reliable software delivery:</p>
+      <ul>
+        <li><strong>Plan:</strong> Define features, prioritize work, and track progress using agile methodologies</li>
+        <li><strong>Code:</strong> Write and review code collaboratively using version control</li>
+        <li><strong>Build:</strong> Compile code, run unit tests, and create deployable artifacts</li>
+        <li><strong>Test:</strong> Run automated tests including integration, performance, and security tests</li>
+        <li><strong>Release:</strong> Approve and prepare artifacts for deployment to production</li>
+        <li><strong>Deploy:</strong> Push changes to production using automated deployment strategies</li>
+        <li><strong>Operate:</strong> Manage and maintain production infrastructure and applications</li>
+        <li><strong>Monitor:</strong> Collect metrics, logs, and traces to understand system behavior and detect issues</li>
+      </ul>
+    </section>
+
+    <!-- MODULE 2 -->
+    <section class="module" id="linux">
+      <h2>Module 2: Linux &amp; Scripting</h2>
+
+      <h3>Why Linux Matters</h3>
+      <p>Linux powers the vast majority of servers, cloud instances, and containers in the world. Understanding Linux is non-negotiable for any DevOps or cloud engineer. Most production systems, CI/CD agents, and container images run on Linux distributions like Ubuntu, CentOS, Amazon Linux, or Alpine.</p>
+
+      <h3>Essential Linux Commands</h3>
+      <ul>
+        <li><strong>Navigation:</strong> <code>cd</code>, <code>ls</code>, <code>pwd</code>, <code>find</code>, <code>locate</code>, <code>tree</code></li>
+        <li><strong>File Operations:</strong> <code>cp</code>, <code>mv</code>, <code>rm</code>, <code>mkdir</code>, <code>touch</code>, <code>cat</code>, <code>head</code>, <code>tail</code>, <code>less</code></li>
+        <li><strong>Text Processing:</strong> <code>grep</code>, <code>sed</code>, <code>awk</code>, <code>cut</code>, <code>sort</code>, <code>uniq</code>, <code>wc</code></li>
+        <li><strong>System Info:</strong> <code>top</code>, <code>htop</code>, <code>df</code>, <code>du</code>, <code>free</code>, <code>uname</code>, <code>uptime</code></li>
+        <li><strong>Networking:</strong> <code>curl</code>, <code>wget</code>, <code>ping</code>, <code>netstat</code>, <code>ss</code>, <code>dig</code>, <code>nslookup</code>, <code>ip</code></li>
+        <li><strong>Process Management:</strong> <code>ps</code>, <code>kill</code>, <code>systemctl</code>, <code>journalctl</code>, <code>cron</code></li>
+      </ul>
+
+      <h3>File Permissions and Ownership</h3>
+      <p>Linux uses a permission system based on three levels: owner, group, and others. Each level can have read (r=4), write (w=2), and execute (x=1) permissions. Understanding permissions is critical for security and proper system administration.</p>
+      <ul>
+        <li><code>chmod 755 file.sh</code> — owner: rwx, group: r-x, others: r-x</li>
+        <li><code>chown user:group file</code> — change file ownership</li>
+        <li><code>sudo</code> — execute commands with superuser privileges</li>
+      </ul>
+
+      <h3>Shell Scripting (Bash)</h3>
+      <p>Bash scripting is essential for automating repetitive tasks in DevOps. Every DevOps engineer should be able to write scripts for deployment, log rotation, backup, monitoring checks, and system maintenance.</p>
+      <ul>
+        <li>Variables, conditionals (<code>if/else</code>), loops (<code>for</code>, <code>while</code>), and functions</li>
+        <li>Command substitution, piping (<code>|</code>), and redirection (<code>&gt;</code>, <code>&gt;&gt;</code>, <code>2&gt;</code>)</li>
+        <li>Exit codes and error handling</li>
+        <li>Reading input, processing files, and parsing command output</li>
+        <li>Cron jobs for scheduling automated tasks</li>
+      </ul>
+    </section>
+
+    <!-- MODULE 3 -->
+    <section class="module" id="git">
+      <h2>Module 3: Git &amp; Version Control</h2>
+
+      <h3>Why Version Control?</h3>
+      <p>Version control systems track every change made to code over time, allowing teams to collaborate without overwriting each other's work, review changes before merging, and roll back to any previous state if something goes wrong. Git is the industry-standard distributed version control system used by virtually every software team.</p>
+
+      <h3>Core Git Concepts</h3>
+      <ul>
+        <li><strong>Repository:</strong> A directory tracked by Git containing all project files and the complete history of changes</li>
+        <li><strong>Commit:</strong> A snapshot of your changes with a descriptive message. Each commit has a unique SHA hash.</li>
+        <li><strong>Branch:</strong> An independent line of development. The default branch is usually called <code>main</code> or <code>master</code>.</li>
+        <li><strong>Merge:</strong> Combining changes from one branch into another</li>
+        <li><strong>Remote:</strong> A hosted copy of the repository (e.g., on GitHub, GitLab, or Bitbucket)</li>
+        <li><strong>Clone:</strong> Creating a local copy of a remote repository</li>
+      </ul>
+
+      <h3>Essential Git Commands</h3>
+      <ul>
+        <li><code>git init</code> — Initialize a new repository</li>
+        <li><code>git clone &lt;url&gt;</code> — Clone a remote repository</li>
+        <li><code>git add .</code> — Stage all changes for commit</li>
+        <li><code>git commit -m "message"</code> — Create a commit with a message</li>
+        <li><code>git push origin main</code> — Push local commits to the remote repository</li>
+        <li><code>git pull</code> — Fetch and merge changes from the remote</li>
+        <li><code>git branch feature-x</code> — Create a new branch</li>
+        <li><code>git checkout feature-x</code> — Switch to a branch</li>
+        <li><code>git merge feature-x</code> — Merge a branch into the current branch</li>
+        <li><code>git log --oneline</code> — View commit history</li>
+        <li><code>git stash</code> — Temporarily save uncommitted changes</li>
+        <li><code>git rebase</code> — Reapply commits on top of another branch</li>
+      </ul>
+
+      <h3>Branching Strategies</h3>
+      <ul>
+        <li><strong>Git Flow:</strong> Uses <code>main</code>, <code>develop</code>, <code>feature/*</code>, <code>release/*</code>, and <code>hotfix/*</code> branches. Best for projects with scheduled releases.</li>
+        <li><strong>GitHub Flow:</strong> Simple model with <code>main</code> and short-lived feature branches. Every change goes through a pull request. Best for continuous deployment.</li>
+        <li><strong>Trunk-Based Development:</strong> Developers commit directly to <code>main</code> (or short-lived branches). Requires robust automated testing. Used by high-performing teams.</li>
+      </ul>
+
+      <h3>Pull Requests and Code Review</h3>
+      <p>Pull requests (PRs) or merge requests (MRs) are a mechanism for proposing changes, discussing them with teammates, and getting approval before merging into the main branch. Code reviews improve code quality, share knowledge, and catch bugs early. Every DevOps team should enforce code review as a standard practice.</p>
+    </section>
+
+    <!-- MODULE 4 -->
+    <section class="module" id="docker">
+      <h2>Module 4: Docker</h2>
+
+      <h3>What Are Containers?</h3>
+      <p>Containers are lightweight, standalone, executable packages that include everything needed to run a piece of software: the code, runtime, system tools, libraries, and settings. Unlike virtual machines, containers share the host operating system's kernel, making them much faster to start and more efficient with resources.</p>
+      <p>Docker is the most popular containerization platform. It standardizes how applications are packaged, distributed, and run, solving the classic "it works on my machine" problem.</p>
+
+      <h3>Core Docker Concepts</h3>
+      <ul>
+        <li><strong>Image:</strong> A read-only template containing the application and its dependencies. Built from a Dockerfile.</li>
+        <li><strong>Container:</strong> A running instance of an image. Containers are ephemeral by default.</li>
+        <li><strong>Dockerfile:</strong> A text file with instructions to build a Docker image (FROM, RUN, COPY, CMD, EXPOSE, etc.)</li>
+        <li><strong>Registry:</strong> A storage and distribution system for Docker images. Docker Hub is the default public registry.</li>
+        <li><strong>Volume:</strong> Persistent storage that survives container restarts and deletions</li>
+        <li><strong>Network:</strong> Docker creates isolated networks for container communication</li>
+      </ul>
+
+      <h3>Essential Docker Commands</h3>
+      <ul>
+        <li><code>docker build -t myapp .</code> — Build an image from a Dockerfile</li>
+        <li><code>docker run -d -p 8080:80 myapp</code> — Run a container in detached mode with port mapping</li>
+        <li><code>docker ps</code> — List running containers</li>
+        <li><code>docker stop &lt;id&gt;</code> — Stop a running container</li>
+        <li><code>docker logs &lt;id&gt;</code> — View container logs</li>
+        <li><code>docker exec -it &lt;id&gt; bash</code> — Open a shell inside a running container</li>
+        <li><code>docker images</code> — List local images</li>
+        <li><code>docker push</code> / <code>docker pull</code> — Push and pull images from a registry</li>
+      </ul>
+
+      <h3>Dockerfile Best Practices</h3>
+      <ul>
+        <li>Use minimal base images (Alpine Linux is only 5MB)</li>
+        <li>Leverage multi-stage builds to keep final images small</li>
+        <li>Order instructions from least to most frequently changing to maximize layer caching</li>
+        <li>Never store secrets in Docker images</li>
+        <li>Use <code>.dockerignore</code> to exclude unnecessary files from the build context</li>
+        <li>Run containers as a non-root user for security</li>
+      </ul>
+
+      <h3>Docker Compose</h3>
+      <p>Docker Compose is a tool for defining and running multi-container applications using a YAML file (<code>docker-compose.yml</code>). It lets you define services, networks, and volumes in a single file and start everything with <code>docker compose up</code>. It is essential for local development environments with multiple interconnected services.</p>
+    </section>
+
+    <!-- MODULE 5 -->
+    <section class="module" id="kubernetes">
+      <h2>Module 5: Kubernetes</h2>
+
+      <h3>What Is Kubernetes?</h3>
+      <p>Kubernetes (K8s) is an open-source container orchestration platform originally developed by Google. It automates the deployment, scaling, and management of containerized applications. Kubernetes handles load balancing, self-healing, rolling updates, storage orchestration, and secret management, making it the industry standard for running containers in production.</p>
+
+      <h3>Core Kubernetes Objects</h3>
+      <ul>
+        <li><strong>Pod:</strong> The smallest deployable unit in Kubernetes. A pod contains one or more containers that share networking and storage.</li>
+        <li><strong>Deployment:</strong> Manages a set of identical pods and handles rolling updates and rollbacks. The most common way to run stateless applications.</li>
+        <li><strong>Service:</strong> Provides a stable network endpoint (IP and DNS name) for accessing a set of pods. Types include ClusterIP, NodePort, and LoadBalancer.</li>
+        <li><strong>ConfigMap:</strong> Stores non-sensitive configuration data as key-value pairs, injected into pods as environment variables or files.</li>
+        <li><strong>Secret:</strong> Stores sensitive data like passwords, tokens, and keys. Base64 encoded (not encrypted by default).</li>
+        <li><strong>Namespace:</strong> Logical partition within a cluster for organizing and isolating resources.</li>
+        <li><strong>Ingress:</strong> Manages external HTTP/HTTPS access to services within the cluster, providing routing, SSL termination, and virtual hosting.</li>
+      </ul>
+
+      <h3>Essential kubectl Commands</h3>
+      <ul>
+        <li><code>kubectl get pods</code> — List all pods in the current namespace</li>
+        <li><code>kubectl get svc</code> — List all services</li>
+        <li><code>kubectl apply -f manifest.yaml</code> — Apply a configuration from a YAML file</li>
+        <li><code>kubectl describe pod &lt;name&gt;</code> — Show detailed information about a pod</li>
+        <li><code>kubectl logs &lt;pod&gt;</code> — View pod logs</li>
+        <li><code>kubectl exec -it &lt;pod&gt; -- bash</code> — Execute a command inside a pod</li>
+        <li><code>kubectl scale deployment &lt;name&gt; --replicas=5</code> — Scale a deployment</li>
+        <li><code>kubectl delete -f manifest.yaml</code> — Delete resources defined in a YAML file</li>
+      </ul>
+
+      <h3>Kubernetes Architecture</h3>
+      <ul>
+        <li><strong>Control Plane:</strong> API Server (cluster gateway), etcd (key-value store for cluster state), Scheduler (assigns pods to nodes), Controller Manager (maintains desired state)</li>
+        <li><strong>Worker Nodes:</strong> kubelet (ensures containers are running in pods), kube-proxy (handles networking rules), Container Runtime (runs containers, e.g., containerd)</li>
+      </ul>
+
+      <h3>Helm</h3>
+      <p>Helm is the package manager for Kubernetes. It uses "charts" (pre-configured Kubernetes resource packages) to simplify deploying and managing complex applications. Helm charts are reusable, versioned, and configurable with values files, making it easy to deploy applications like Nginx, Prometheus, or PostgreSQL with a single command.</p>
+    </section>
+
+    <!-- MODULE 6 -->
+    <section class="module" id="cicd">
+      <h2>Module 6: CI/CD</h2>
+
+      <h3>What Is CI/CD?</h3>
+      <p>Continuous Integration (CI) is the practice of automatically building and testing code every time a developer pushes changes to the repository. Continuous Delivery (CD) extends CI by automatically deploying all code changes to a staging or production environment after passing tests. Together, CI/CD pipelines enable teams to release software faster and with greater confidence.</p>
+
+      <h3>CI/CD Pipeline Stages</h3>
+      <ul>
+        <li><strong>Source:</strong> Triggered when code is pushed or a pull request is created</li>
+        <li><strong>Build:</strong> Compile code and create deployable artifacts (Docker images, JARs, binaries)</li>
+        <li><strong>Test:</strong> Run unit tests, integration tests, security scans, and code quality checks</li>
+        <li><strong>Deploy to Staging:</strong> Deploy to a staging environment for validation</li>
+        <li><strong>Approval (optional):</strong> Manual approval gate before production deployment</li>
+        <li><strong>Deploy to Production:</strong> Deploy to the production environment using a chosen strategy</li>
+        <li><strong>Post-Deploy:</strong> Run smoke tests, monitor for errors, and notify the team</li>
+      </ul>
+
+      <h3>Popular CI/CD Tools</h3>
+      <ul>
+        <li><strong>GitHub Actions:</strong> Native CI/CD built into GitHub. Uses YAML workflow files. Free for public repositories. Excellent for teams already on GitHub.</li>
+        <li><strong>GitLab CI/CD:</strong> Built into GitLab with powerful pipeline capabilities. Uses <code>.gitlab-ci.yml</code>. Supports auto-scaling runners.</li>
+        <li><strong>Jenkins:</strong> The most widely used open-source automation server. Highly extensible with thousands of plugins. Requires self-hosting and maintenance.</li>
+        <li><strong>AWS CodePipeline:</strong> Fully managed CI/CD service that integrates natively with AWS services.</li>
+        <li><strong>Azure DevOps Pipelines:</strong> Full-featured CI/CD with both YAML and visual pipeline editors.</li>
+        <li><strong>ArgoCD:</strong> GitOps continuous delivery tool for Kubernetes. Syncs cluster state with Git repositories.</li>
+      </ul>
+
+      <h3>Deployment Strategies</h3>
+      <ul>
+        <li><strong>Rolling Update:</strong> Gradually replace old instances with new ones. Zero downtime but both versions run simultaneously during the update.</li>
+        <li><strong>Blue-Green:</strong> Maintain two identical environments. Switch traffic from blue (current) to green (new) once validated. Enables instant rollback.</li>
+        <li><strong>Canary:</strong> Route a small percentage of traffic to the new version. Gradually increase if no issues are detected. Minimizes blast radius of failures.</li>
+        <li><strong>A/B Testing:</strong> Route traffic to different versions based on specific rules (location, user group) to test features with real users.</li>
+      </ul>
+    </section>
+
+    <!-- MODULE 7 -->
+    <section class="module" id="iac">
+      <h2>Module 7: Infrastructure as Code</h2>
+
+      <h3>What Is Infrastructure as Code?</h3>
+      <p>Infrastructure as Code (IaC) is the practice of managing and provisioning infrastructure through machine-readable definition files rather than manual processes or interactive configuration tools. IaC enables version control for infrastructure, repeatable deployments, and automated testing of infrastructure changes.</p>
+
+      <h3>Terraform</h3>
+      <p>Terraform by HashiCorp is the most popular open-source IaC tool. It uses a declarative language called HCL (HashiCorp Configuration Language) to define infrastructure across multiple cloud providers. Terraform tracks the state of your infrastructure and only applies the changes needed to reach the desired state.</p>
+      <ul>
+        <li><strong>Providers:</strong> Plugins that interact with cloud platforms (AWS, Azure, GCP, Kubernetes, etc.)</li>
+        <li><strong>Resources:</strong> The infrastructure components you create (instances, networks, databases)</li>
+        <li><strong>State:</strong> Terraform tracks the current state of infrastructure in a state file</li>
+        <li><strong>Modules:</strong> Reusable, shareable packages of Terraform configuration</li>
+        <li><strong>Workflow:</strong> <code>terraform init</code> → <code>terraform plan</code> → <code>terraform apply</code> → <code>terraform destroy</code></li>
+      </ul>
+
+      <h3>AWS CloudFormation</h3>
+      <p>CloudFormation is AWS's native IaC service. It uses JSON or YAML templates to define AWS resources as "stacks." While CloudFormation only works with AWS, it has deep integration with all AWS services and is often the first IaC tool AWS-focused teams learn.</p>
+
+      <h3>Ansible</h3>
+      <p>Ansible is an open-source automation tool primarily used for configuration management, application deployment, and orchestration. Unlike Terraform (which provisions infrastructure), Ansible excels at configuring the software and settings on existing infrastructure. It is agentless, using SSH to connect to servers.</p>
+      <ul>
+        <li>Playbooks define tasks in YAML format</li>
+        <li>Inventory files list managed hosts and groups</li>
+        <li>Roles organize playbooks into reusable components</li>
+        <li>Ansible Galaxy provides pre-built community roles</li>
+      </ul>
+
+      <h3>IaC Best Practices</h3>
+      <ul>
+        <li>Store all IaC in version control (Git) and review changes through pull requests</li>
+        <li>Use remote state storage (S3, Azure Blob, GCS) with state locking for team collaboration</li>
+        <li>Organize code into reusable modules to avoid duplication</li>
+        <li>Use separate workspaces or directories for different environments (dev, staging, prod)</li>
+        <li>Never hardcode secrets in IaC files; use secret management tools</li>
+        <li>Run <code>terraform plan</code> in CI pipelines and require approval before <code>apply</code></li>
+      </ul>
+    </section>
+
+    <!-- MODULE 8 -->
+    <section class="module" id="monitoring">
+      <h2>Module 8: Monitoring &amp; Logging</h2>
+
+      <h3>Why Monitoring Matters</h3>
+      <p>Monitoring and observability are essential for understanding the health, performance, and behavior of your systems in production. Without proper monitoring, you are flying blind—unable to detect issues before they impact users, unable to diagnose root causes efficiently, and unable to make data-driven decisions about capacity and performance.</p>
+
+      <h3>The Three Pillars of Observability</h3>
+      <ul>
+        <li><strong>Metrics:</strong> Numerical measurements collected over time (CPU usage, request latency, error rates, throughput). Best for alerting and dashboards.</li>
+        <li><strong>Logs:</strong> Timestamped text records of discrete events (application errors, access logs, system events). Best for debugging specific issues.</li>
+        <li><strong>Traces:</strong> Records of the path a request takes through a distributed system. Essential for debugging microservices architectures.</li>
+      </ul>
+
+      <h3>Prometheus</h3>
+      <p>Prometheus is an open-source monitoring system designed for reliability and scalability. It collects metrics from configured targets at given intervals, evaluates rule expressions, displays results, and triggers alerts when conditions are met. Prometheus uses a pull-based model and stores time-series data efficiently.</p>
+      <ul>
+        <li>PromQL query language for flexible data analysis</li>
+        <li>Service discovery for automatically finding targets to monitor</li>
+        <li>Alertmanager for routing, deduplicating, and silencing alerts</li>
+        <li>Widely adopted as the standard for Kubernetes monitoring</li>
+      </ul>
+
+      <h3>Grafana</h3>
+      <p>Grafana is the leading open-source platform for data visualization and dashboarding. It connects to dozens of data sources including Prometheus, Elasticsearch, CloudWatch, and Azure Monitor. Grafana enables teams to create rich, interactive dashboards to visualize metrics, logs, and traces in a single pane of glass.</p>
+
+      <h3>ELK Stack (Elasticsearch, Logstash, Kibana)</h3>
+      <p>The ELK Stack is the most popular open-source log management solution. Elasticsearch stores and indexes log data for fast search. Logstash (or Fluentd/Fluent Bit) collects, transforms, and ships logs. Kibana provides a web interface for searching, analyzing, and visualizing log data. Many teams now use the EFK stack (replacing Logstash with Fluentd) for Kubernetes environments.</p>
+
+      <h3>Cloud-Native Monitoring</h3>
+      <ul>
+        <li><strong>AWS CloudWatch:</strong> Monitoring service for AWS resources with metrics, logs, alarms, and dashboards</li>
+        <li><strong>Azure Monitor:</strong> Full-stack monitoring for Azure including Application Insights for application performance</li>
+        <li><strong>Google Cloud Operations (formerly Stackdriver):</strong> Integrated monitoring, logging, and tracing for GCP</li>
+      </ul>
+
+      <h3>Monitoring Best Practices</h3>
+      <ul>
+        <li>Monitor the four golden signals: latency, traffic, errors, and saturation</li>
+        <li>Set up alerts based on symptoms (user impact), not just causes (high CPU)</li>
+        <li>Use structured logging (JSON format) for easier parsing and analysis</li>
+        <li>Implement centralized log aggregation; never rely on SSH-ing into servers to read logs</li>
+        <li>Create runbooks for common alert scenarios to speed up incident response</li>
+        <li>Practice chaos engineering to validate monitoring and alerting before real failures occur</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="cloud.html">Cloud</a>
+      <a href="devops.html">DevOps</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="resources.html">Resources</a>
+    </div>
+    <p>&copy; 2025 Coding World. All rights reserved.</p>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>

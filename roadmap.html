@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Step-by-step career roadmaps for Cloud Engineer and DevOps Engineer roles with time estimates.">
+  <title>Career Roadmaps | Coding World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">Coding<span>World</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cloud.html">Cloud</a></li>
+      <li><a href="devops.html">DevOps</a></li>
+      <li><a href="roadmap.html" class="active">Roadmap</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <header class="page-header">
+    <h1><i class="fas fa-map-signs"></i> Career Roadmaps</h1>
+    <p>Step-by-step learning paths to become a Cloud Engineer or DevOps Engineer</p>
+  </header>
+
+  <main class="content">
+
+    <div class="legend">
+      <div class="legend-item">
+        <div class="legend-dot green"></div>
+        Beginner
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot yellow"></div>
+        Intermediate
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot red"></div>
+        Advanced
+      </div>
+    </div>
+
+    <!-- CLOUD ENGINEER ROADMAP -->
+    <div class="roadmap-section">
+      <h2><i class="fas fa-cloud"></i> Cloud Engineer Roadmap</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot beginner"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>Computer Networking Basics</h3>
+            <p class="time"><i class="far fa-clock"></i> 2 weeks</p>
+            <p>TCP/IP, DNS, HTTP/HTTPS, ports, firewalls, subnets, CIDR notation, OSI model.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot beginner"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>Linux Fundamentals</h3>
+            <p class="time"><i class="far fa-clock"></i> 3 weeks</p>
+            <p>Command line, file system, permissions, package management, basic shell scripting.</p>
+            <a href="devops.html#linux">View Module &rarr;</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot beginner"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>Cloud Fundamentals</h3>
+            <p class="time"><i class="far fa-clock"></i> 2 weeks</p>
+            <p>Service models (IaaS/PaaS/SaaS), deployment models, regions, availability zones, shared responsibility.</p>
+            <a href="cloud.html#cloud-fundamentals">View Module &rarr;</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot intermediate"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>AWS Core Services</h3>
+            <p class="time"><i class="far fa-clock"></i> 5 weeks</p>
+            <p>EC2, S3, VPC, IAM, RDS, Lambda, CloudWatch, Route 53. Hands-on labs with AWS Free Tier.</p>
+            <a href="cloud.html#aws">View Module &rarr;</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot intermediate"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>Azure or GCP Core Services</h3>
+            <p class="time"><i class="far fa-clock"></i> 4 weeks</p>
+            <p>Learn a second cloud platform. Focus on equivalent services and understand the differences.</p>
+            <a href="cloud.html#azure">View Module &rarr;</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot intermediate"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>Infrastructure as Code (Terraform)</h3>
+            <p class="time"><i class="far fa-clock"></i> 4 weeks</p>
+            <p>HCL syntax, providers, resources, state management, modules, and multi-environment setups.</p>
+            <a href="devops.html#iac">View Module &rarr;</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot intermediate"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>Cloud Security</h3>
+            <p class="time"><i class="far fa-clock"></i> 3 weeks</p>
+            <p>IAM deep dive, encryption, network security, compliance, logging, and audit.</p>
+            <a href="cloud.html#advanced-cloud">View Module &rarr;</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot advanced"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>Containers &amp; Orchestration</h3>
+            <p class="time"><i class="far fa-clock"></i> 4 weeks</p>
+            <p>Docker fundamentals, ECS/EKS/AKS/GKE, container networking, and managed Kubernetes.</p>
+            <a href="devops.html#docker">View Module &rarr;</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot advanced"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>Advanced Architecture &amp; Cost Optimization</h3>
+            <p class="time"><i class="far fa-clock"></i> 4 weeks</p>
+            <p>Well-Architected Framework, serverless, microservices, multi-cloud, FinOps, and disaster recovery.</p>
+            <a href="cloud.html#advanced-cloud">View Module &rarr;</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot advanced"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>Cloud Certification</h3>
+            <p class="time"><i class="far fa-clock"></i> 4 weeks</p>
+            <p>Prepare for AWS Solutions Architect Associate, Azure Administrator, or GCP Cloud Engineer certification.</p>
+            <a href="resources.html">View Resources &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- DEVOPS ENGINEER ROADMAP -->
+    <div class="roadmap-section" style="margin-top: 2rem;">
+      <h2><i class="fas fa-infinity"></i> DevOps Engineer Roadmap</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot beginner"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>Linux &amp; Command Line</h3>
+            <p class="time"><i class="far fa-clock"></i> 3 weeks</p>
+            <p>File system, permissions, processes, package managers, SSH, cron jobs, and system administration.</p>
+            <a href="devops.html#linux">View Module &rarr;</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot beginner"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>Shell Scripting (Bash)</h3>
+            <p class="time"><i class="far fa-clock"></i> 2 weeks</p>
+            <p>Variables, loops, conditionals, functions, text processing, and automation scripts.</p>
+            <a href="devops.html#linux">View Module &rarr;</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot beginner"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>Git &amp; Version Control</h3>
+            <p class="time"><i class="far fa-clock"></i> 2 weeks</p>
+            <p>Commits, branches, merges, pull requests, branching strategies, and collaboration workflows.</p>
+            <a href="devops.html#git">View Module &rarr;</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot beginner"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>Networking Basics</h3>
+            <p class="time"><i class="far fa-clock"></i> 2 weeks</p>
+            <p>TCP/IP, DNS, HTTP, SSL/TLS, load balancing, firewalls, and troubleshooting network issues.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot intermediate"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>Cloud Platform (Pick One: AWS / Azure / GCP)</h3>
+            <p class="time"><i class="far fa-clock"></i> 4 weeks</p>
+            <p>Core compute, storage, networking, and IAM services. Focus on one platform first, then expand.</p>
+            <a href="cloud.html#aws">View Module &rarr;</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot intermediate"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>Docker &amp; Containers</h3>
+            <p class="time"><i class="far fa-clock"></i> 3 weeks</p>
+            <p>Images, containers, Dockerfiles, volumes, networking, Docker Compose, and container registries.</p>
+            <a href="devops.html#docker">View Module &rarr;</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot intermediate"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>CI/CD Pipelines</h3>
+            <p class="time"><i class="far fa-clock"></i> 3 weeks</p>
+            <p>Build pipelines with GitHub Actions or Jenkins. Automated testing, artifact management, and deployment strategies.</p>
+            <a href="devops.html#cicd">View Module &rarr;</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot advanced"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>Kubernetes</h3>
+            <p class="time"><i class="far fa-clock"></i> 5 weeks</p>
+            <p>Pods, Deployments, Services, ConfigMaps, Secrets, Ingress, Helm, and managed K8s (EKS/AKS/GKE).</p>
+            <a href="devops.html#kubernetes">View Module &rarr;</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot advanced"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>Infrastructure as Code (Terraform &amp; Ansible)</h3>
+            <p class="time"><i class="far fa-clock"></i> 4 weeks</p>
+            <p>Terraform for provisioning infrastructure, Ansible for configuration management. State, modules, and playbooks.</p>
+            <a href="devops.html#iac">View Module &rarr;</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot advanced"></div>
+          </div>
+          <div class="timeline-info">
+            <h3>Monitoring, Logging &amp; Observability</h3>
+            <p class="time"><i class="far fa-clock"></i> 3 weeks</p>
+            <p>Prometheus, Grafana, ELK/EFK stack, alerting, dashboards, and the three pillars of observability.</p>
+            <a href="devops.html#monitoring">View Module &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="cloud.html">Cloud</a>
+      <a href="devops.html">DevOps</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="resources.html">Resources</a>
+    </div>
+    <p>&copy; 2025 Coding World. All rights reserved.</p>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn Cloud Computing from basics to advanced. Covers AWS, Azure, GCP fundamentals and deep dives.">
+  <title>Cloud Computing | Coding World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">Coding<span>World</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cloud.html" class="active">Cloud</a></li>
+      <li><a href="devops.html">DevOps</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <header class="page-header">
+    <h1><i class="fas fa-cloud"></i> Cloud Computing Learning Path</h1>
+    <p>Master cloud computing from fundamentals to advanced multi-cloud architectures</p>
+  </header>
+
+  <main class="content">
+
+    <!-- MODULE 1 -->
+    <section class="module" id="cloud-fundamentals">
+      <h2>Module 1: Cloud Fundamentals</h2>
+
+      <h3>What Is Cloud Computing?</h3>
+      <p>Cloud computing is the on-demand delivery of computing resources—servers, storage, databases, networking, software, and analytics—over the internet. Instead of buying and maintaining physical data centers and servers, you rent access to technology services from a cloud provider on a pay-as-you-go basis.</p>
+      <p>This model eliminates the upfront capital expense of purchasing hardware, reduces the ongoing costs of running data centers, and lets you scale resources up or down in minutes rather than weeks.</p>
+
+      <h3>Service Models</h3>
+      <ul>
+        <li><strong>IaaS (Infrastructure as a Service):</strong> Provides virtualized computing resources over the internet. You manage the operating system, applications, and data while the provider manages the hardware, networking, and virtualization. Examples: AWS EC2, Azure Virtual Machines, Google Compute Engine.</li>
+        <li><strong>PaaS (Platform as a Service):</strong> Provides a complete platform for developing, running, and managing applications without dealing with the underlying infrastructure. Examples: AWS Elastic Beanstalk, Azure App Service, Google App Engine.</li>
+        <li><strong>SaaS (Software as a Service):</strong> Delivers fully functional software applications over the internet on a subscription basis. Users access the software through a web browser. Examples: Gmail, Salesforce, Microsoft 365, Slack.</li>
+      </ul>
+
+      <h3>Deployment Models</h3>
+      <ul>
+        <li><strong>Public Cloud:</strong> Resources are owned and operated by a third-party cloud provider and shared across multiple organizations. Most cost-effective for common workloads with standard compliance requirements.</li>
+        <li><strong>Private Cloud:</strong> Cloud infrastructure used exclusively by a single organization. Offers greater control, customization, and security but comes at a higher cost.</li>
+        <li><strong>Hybrid Cloud:</strong> Combines public and private clouds, allowing data and applications to move between them. Provides flexibility for sensitive workloads while leveraging the public cloud's scale.</li>
+        <li><strong>Multi-Cloud:</strong> Using services from multiple cloud providers simultaneously to avoid vendor lock-in and leverage the best-of-breed services from each provider.</li>
+      </ul>
+
+      <h3>Key Benefits</h3>
+      <ul>
+        <li><strong>Scalability:</strong> Scale resources up or down based on demand within minutes.</li>
+        <li><strong>Cost Efficiency:</strong> Pay only for what you use with no upfront capital expenditure.</li>
+        <li><strong>Global Reach:</strong> Deploy applications in data centers around the world in minutes.</li>
+        <li><strong>Reliability:</strong> Built-in redundancy, automated backups, and disaster recovery capabilities.</li>
+        <li><strong>Speed:</strong> Provision new resources in minutes instead of the weeks it takes to procure physical hardware.</li>
+        <li><strong>Security:</strong> Major cloud providers invest billions annually in security and hold numerous compliance certifications.</li>
+      </ul>
+    </section>
+
+    <!-- MODULE 2 -->
+    <section class="module" id="aws">
+      <h2>Module 2: AWS Deep Dive</h2>
+
+      <h3>AWS Overview</h3>
+      <p>Amazon Web Services is the world's most comprehensive cloud platform, offering over 200 fully featured services from data centers across 31 geographic regions. AWS serves millions of customers including startups, large enterprises, and government organizations. It holds the largest market share in the cloud industry.</p>
+
+      <h3>EC2 (Elastic Compute Cloud)</h3>
+      <p>EC2 provides resizable virtual servers in the cloud. You can launch instances with different configurations of CPU, memory, storage, and networking capacity. EC2 instances are the backbone of most AWS architectures.</p>
+      <ul>
+        <li>Instance families: General Purpose (t3, m6i), Compute Optimized (c6i), Memory Optimized (r6i), Storage Optimized (i3), GPU (p4d)</li>
+        <li>Pricing models: On-Demand (pay per second), Reserved Instances (1-3 year commitment, up to 72% savings), Spot Instances (up to 90% savings for interruptible workloads)</li>
+        <li>Auto Scaling Groups automatically adjust the number of instances based on demand</li>
+        <li>Elastic Load Balancers distribute incoming traffic across multiple instances</li>
+      </ul>
+
+      <h3>S3 (Simple Storage Service)</h3>
+      <p>S3 is an object storage service designed for 99.999999999% (11 nines) of data durability. It stores data as objects within buckets and is used for backups, static website hosting, data lakes, content distribution, and application data storage.</p>
+      <ul>
+        <li>Storage classes: S3 Standard, Intelligent-Tiering, Standard-IA, One Zone-IA, Glacier Instant Retrieval, Glacier Flexible Retrieval, Glacier Deep Archive</li>
+        <li>Features: versioning, lifecycle policies, cross-region replication, event notifications</li>
+        <li>Security: bucket policies, ACLs, server-side encryption (SSE-S3, SSE-KMS, SSE-C), block public access settings</li>
+      </ul>
+
+      <h3>VPC (Virtual Private Cloud)</h3>
+      <p>VPC lets you create a logically isolated virtual network in the AWS cloud. You have complete control over your network configuration including IP address ranges, subnets, route tables, and gateways. VPC is fundamental to securing your AWS resources.</p>
+      <ul>
+        <li>Subnets: public subnets (internet-accessible) and private subnets (isolated) across multiple Availability Zones</li>
+        <li>Internet Gateways for public internet access, NAT Gateways for outbound internet access from private subnets</li>
+        <li>Security Groups (stateful instance-level firewall) and Network ACLs (stateless subnet-level firewall)</li>
+        <li>VPC Peering, Transit Gateway, and VPN for connecting multiple networks</li>
+      </ul>
+
+      <h3>IAM (Identity and Access Management)</h3>
+      <p>IAM controls who can access your AWS resources and what actions they can perform. It is the cornerstone of AWS security and should be the first service you learn thoroughly.</p>
+      <ul>
+        <li>Users, Groups, Roles, and Policies form the core of IAM</li>
+        <li>Policies are JSON documents specifying Effect (Allow/Deny), Actions, and Resources</li>
+        <li>Always follow the Principle of Least Privilege: grant only the permissions needed</li>
+        <li>Enable Multi-Factor Authentication (MFA) on all accounts, especially the root account</li>
+        <li>Use IAM Roles for applications and services instead of embedding access keys</li>
+      </ul>
+
+      <h3>Lambda</h3>
+      <p>AWS Lambda is a serverless compute service that runs your code in response to events without requiring you to provision or manage servers. You pay only for the compute time consumed, measured in milliseconds. Lambda supports Python, Node.js, Java, Go, .NET, and Ruby.</p>
+      <ul>
+        <li>Triggers include API Gateway, S3 events, DynamoDB Streams, SQS, CloudWatch Events, and more</li>
+        <li>Maximum execution time of 15 minutes per invocation</li>
+        <li>Scales automatically from zero to thousands of concurrent executions</li>
+      </ul>
+
+      <h3>RDS (Relational Database Service)</h3>
+      <p>RDS makes it easy to set up, operate, and scale relational databases in the cloud. It handles routine database tasks such as provisioning, patching, backup, recovery, and scaling. RDS supports MySQL, PostgreSQL, MariaDB, Oracle, SQL Server, and Amazon Aurora.</p>
+      <ul>
+        <li>Multi-AZ deployments for high availability with automatic failover</li>
+        <li>Read Replicas for read-heavy workloads and improved performance</li>
+        <li>Automated backups with point-in-time recovery up to 35 days</li>
+      </ul>
+
+      <h3>Other Essential AWS Services</h3>
+      <ul>
+        <li><strong>Route 53:</strong> Scalable DNS and domain registration service</li>
+        <li><strong>CloudFront:</strong> Content delivery network (CDN) for fast global content distribution</li>
+        <li><strong>CloudWatch:</strong> Monitoring and observability for AWS resources and applications</li>
+        <li><strong>CloudTrail:</strong> Records API calls and account activity for auditing and compliance</li>
+        <li><strong>SNS/SQS:</strong> Messaging services for decoupling application components</li>
+        <li><strong>DynamoDB:</strong> Fully managed NoSQL database with single-digit millisecond performance</li>
+        <li><strong>ECS/EKS:</strong> Container orchestration services (ECS for Docker, EKS for Kubernetes)</li>
+      </ul>
+    </section>
+
+    <!-- MODULE 3 -->
+    <section class="module" id="azure">
+      <h2>Module 3: Azure Deep Dive</h2>
+
+      <h3>Azure Overview</h3>
+      <p>Microsoft Azure is the second-largest cloud platform, operating in over 60 regions worldwide. Azure integrates seamlessly with Microsoft's enterprise ecosystem including Active Directory, Office 365, and Windows Server, making it the natural choice for organizations already invested in Microsoft technologies.</p>
+
+      <h3>Azure Virtual Machines</h3>
+      <p>Azure VMs provide on-demand, scalable computing resources supporting both Windows and Linux. Azure offers a wide range of VM sizes optimized for different workloads including general purpose, compute-intensive, memory-intensive, and GPU-enabled configurations.</p>
+      <ul>
+        <li>VM Scale Sets for automatic scaling of identical VMs</li>
+        <li>Availability Sets and Availability Zones for high availability</li>
+        <li>Azure Spot VMs for cost savings on interruptible workloads (up to 90% discount)</li>
+      </ul>
+
+      <h3>Azure Blob Storage</h3>
+      <p>Blob Storage is Azure's object storage solution optimized for storing massive amounts of unstructured data such as text, binary data, images, and videos. It offers three access tiers to help you store data cost-effectively based on access patterns.</p>
+      <ul>
+        <li>Access tiers: Hot (frequently accessed), Cool (infrequently accessed, stored for at least 30 days), Archive (rarely accessed, stored for at least 180 days)</li>
+        <li>Lifecycle management policies to automatically transition data between tiers</li>
+        <li>Geo-redundant storage (GRS) for cross-region data replication</li>
+      </ul>
+
+      <h3>Azure Virtual Network (VNet)</h3>
+      <p>VNet is the fundamental building block for private networks in Azure. It enables Azure resources to securely communicate with each other, the internet, and on-premises networks. VNets are scoped to a single region but can be connected across regions using VNet Peering.</p>
+      <ul>
+        <li>Subnets for network segmentation within a VNet</li>
+        <li>Network Security Groups (NSGs) for filtering inbound and outbound traffic</li>
+        <li>Azure VPN Gateway and ExpressRoute for hybrid connectivity</li>
+        <li>Azure Firewall and Azure DDoS Protection for advanced security</li>
+      </ul>
+
+      <h3>Azure Active Directory (Azure AD / Entra ID)</h3>
+      <p>Azure AD (now Microsoft Entra ID) is a cloud-based identity and access management service. It handles authentication and authorization for Azure resources, Microsoft 365, and thousands of third-party SaaS applications. It is fundamentally different from on-premises Active Directory.</p>
+      <ul>
+        <li>Single Sign-On (SSO), Multi-Factor Authentication (MFA), and Conditional Access</li>
+        <li>Role-Based Access Control (RBAC) for fine-grained Azure resource permissions</li>
+        <li>Azure AD B2C for customer identity management</li>
+      </ul>
+
+      <h3>Azure Functions</h3>
+      <p>Azure Functions is a serverless compute service for running event-triggered code without managing infrastructure. It supports C#, JavaScript, Python, Java, and PowerShell. Functions integrate natively with other Azure services and can be triggered by HTTP requests, timers, queues, and database changes.</p>
+
+      <h3>Other Essential Azure Services</h3>
+      <ul>
+        <li><strong>Azure App Service:</strong> Fully managed platform for building web apps and APIs</li>
+        <li><strong>Azure SQL Database:</strong> Fully managed relational database service</li>
+        <li><strong>Azure Kubernetes Service (AKS):</strong> Managed Kubernetes for container orchestration</li>
+        <li><strong>Azure DevOps:</strong> Suite of development tools for CI/CD pipelines</li>
+        <li><strong>Azure Monitor:</strong> Full-stack monitoring for applications and infrastructure</li>
+        <li><strong>Azure Key Vault:</strong> Centralized secrets, keys, and certificate management</li>
+      </ul>
+    </section>
+
+    <!-- MODULE 4 -->
+    <section class="module" id="gcp">
+      <h2>Module 4: GCP Deep Dive</h2>
+
+      <h3>GCP Overview</h3>
+      <p>Google Cloud Platform leverages the same infrastructure that powers Google Search, YouTube, and Gmail. GCP is particularly strong in data analytics, machine learning, and Kubernetes (which Google originally created). It operates in over 35 regions worldwide and is the third-largest cloud provider.</p>
+
+      <h3>Compute Engine</h3>
+      <p>Compute Engine delivers virtual machines running in Google's global data centers. It offers predefined and custom machine types, preemptible VMs for batch workloads at significant discounts, and live migration that moves running VMs between hosts with zero downtime during maintenance.</p>
+      <ul>
+        <li>Machine families: General-purpose (E2, N2), Compute-optimized (C2), Memory-optimized (M2), Accelerator-optimized (A2)</li>
+        <li>Preemptible VMs and Spot VMs for up to 91% cost savings</li>
+        <li>Managed Instance Groups with autoscaling and autohealing</li>
+      </ul>
+
+      <h3>Cloud Storage</h3>
+      <p>Cloud Storage is a unified object storage service with a single API and strong consistency across all storage classes. It provides four storage classes to match different access patterns and cost requirements.</p>
+      <ul>
+        <li>Storage classes: Standard, Nearline (accessed less than once per month), Coldline (less than once per quarter), Archive (less than once per year)</li>
+        <li>Object Lifecycle Management for automatic class transitions and deletion</li>
+        <li>Dual-region and multi-region options for high availability</li>
+      </ul>
+
+      <h3>Google Kubernetes Engine (GKE)</h3>
+      <p>GKE is a managed Kubernetes service that provides a production-ready environment for containerized applications. Since Google created Kubernetes, GKE offers the most advanced and tightly integrated Kubernetes experience among all cloud providers, with features like Autopilot mode for fully managed clusters.</p>
+      <ul>
+        <li>GKE Standard for full cluster control, GKE Autopilot for hands-off management</li>
+        <li>Integrated logging and monitoring with Cloud Operations suite</li>
+        <li>Workload Identity for secure access to GCP services from pods</li>
+      </ul>
+
+      <h3>BigQuery</h3>
+      <p>BigQuery is a fully managed, serverless data warehouse that enables super-fast SQL queries over petabytes of data. It separates storage and compute, meaning you can scale each independently. BigQuery is one of GCP's most compelling and differentiated services.</p>
+      <ul>
+        <li>Serverless architecture with no infrastructure to manage</li>
+        <li>Built-in machine learning with BigQuery ML</li>
+        <li>On-demand and flat-rate pricing options</li>
+        <li>Real-time analytics with streaming inserts</li>
+      </ul>
+
+      <h3>Other Essential GCP Services</h3>
+      <ul>
+        <li><strong>Cloud Functions:</strong> Serverless event-driven compute (similar to Lambda)</li>
+        <li><strong>Cloud Run:</strong> Fully managed serverless containers</li>
+        <li><strong>Cloud SQL:</strong> Managed MySQL, PostgreSQL, and SQL Server</li>
+        <li><strong>VPC:</strong> Virtual Private Cloud networking with global scope</li>
+        <li><strong>Cloud IAM:</strong> Fine-grained identity and access management</li>
+        <li><strong>Pub/Sub:</strong> Real-time messaging service for event-driven architectures</li>
+        <li><strong>Cloud Build:</strong> Serverless CI/CD platform</li>
+      </ul>
+    </section>
+
+    <!-- MODULE 5 -->
+    <section class="module" id="advanced-cloud">
+      <h2>Module 5: Advanced Cloud Concepts</h2>
+
+      <h3>Multi-Cloud Strategy</h3>
+      <p>A multi-cloud strategy involves using services from two or more cloud providers to avoid vendor lock-in, optimize costs, meet regulatory requirements, and leverage the strongest services from each provider. Tools like Terraform, Pulumi, and Crossplane help manage infrastructure across multiple clouds with a unified workflow.</p>
+      <ul>
+        <li>Avoid vendor lock-in by abstracting cloud-specific APIs where possible</li>
+        <li>Use Kubernetes as a portable platform layer across clouds</li>
+        <li>Implement consistent identity, security, and networking policies across providers</li>
+      </ul>
+
+      <h3>Cloud Security Best Practices</h3>
+      <p>Security in the cloud follows the Shared Responsibility Model: the cloud provider secures the infrastructure, while you are responsible for securing your data, applications, and configurations. Understanding this boundary is critical.</p>
+      <ul>
+        <li>Apply the Principle of Least Privilege to all IAM policies</li>
+        <li>Encrypt data at rest and in transit using provider-managed or customer-managed keys</li>
+        <li>Enable comprehensive logging and monitoring (CloudTrail, Azure Monitor, Cloud Audit Logs)</li>
+        <li>Implement network segmentation with VPCs, security groups, and private endpoints</li>
+        <li>Regularly audit configurations with tools like AWS Config, Azure Policy, or Security Command Center</li>
+        <li>Use Cloud Security Posture Management (CSPM) tools to detect misconfigurations</li>
+      </ul>
+
+      <h3>Cost Optimization</h3>
+      <ul>
+        <li>Right-size instances by analyzing actual CPU, memory, and network utilization</li>
+        <li>Use Reserved Instances, Savings Plans, or Committed Use Discounts for predictable workloads</li>
+        <li>Leverage Spot or Preemptible instances for fault-tolerant and batch processing workloads</li>
+        <li>Implement auto-scaling to match capacity with real-time demand</li>
+        <li>Use appropriate storage tiers and lifecycle policies to move cold data to cheaper classes</li>
+        <li>Set up billing alerts, budgets, and cost anomaly detection</li>
+        <li>Review and eliminate unused resources: unattached EBS volumes, idle load balancers, old snapshots</li>
+      </ul>
+
+      <h3>Well-Architected Framework</h3>
+      <p>All three major cloud providers offer a Well-Architected Framework providing best practices for building secure, reliable, efficient, and cost-effective systems. While the exact terminology varies, they share five common pillars:</p>
+      <ul>
+        <li><strong>Operational Excellence:</strong> Run and monitor systems to deliver business value and continuously improve processes</li>
+        <li><strong>Security:</strong> Protect information, systems, and assets through risk assessment and mitigation strategies</li>
+        <li><strong>Reliability:</strong> Ensure workloads perform their intended function correctly and consistently, and recover quickly from failures</li>
+        <li><strong>Performance Efficiency:</strong> Use computing resources efficiently to meet system requirements and maintain efficiency as demand changes</li>
+        <li><strong>Cost Optimization:</strong> Avoid unnecessary costs by understanding spending patterns and controlling fund allocation</li>
+      </ul>
+
+      <h3>Cloud Architecture Patterns</h3>
+      <ul>
+        <li><strong>Microservices:</strong> Decompose applications into small, independently deployable services that communicate via APIs</li>
+        <li><strong>Event-Driven Architecture:</strong> Use events to trigger and communicate between decoupled services for real-time processing</li>
+        <li><strong>Serverless:</strong> Build applications using managed services and functions, eliminating server management entirely</li>
+        <li><strong>Containerization:</strong> Package applications with their dependencies into containers for 
