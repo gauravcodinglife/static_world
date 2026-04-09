@@ -3,7 +3,11 @@ An exploration of modern cloud hosting. This project demonstrates the deployment
 two distinct architectures: Enterprise Cloud (AWS) and Developer-First Edge (Vercel).
 
 🔗 Live Demo
-View Live Website (static-world-ei7o.vercel.app)
+View Live Website
+<div align="center">
+  <h2>Live Demo</h2>
+  <p>🔗 <a href="https://static-world-ei7o.vercel.app">View Website</a></p>
+</div>
 
 🏗️ Architecture Showcase
 1. The AWS Pipeline (Infrastructure Focus)
