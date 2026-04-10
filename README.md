@@ -5,7 +5,7 @@ two distinct architectures: Enterprise Cloud (AWS) and Developer-First Edge (Ver
 🔗 Live Demo
 View Live Website
 <div align="center">
-  <p>🔗 <a href="https://static-world-ei7o.vercel.app">View Website</a></p>
+  <p>🔗 <a href="https://static-world-z27z.vercel.app">View Website</a></p>
 </div>
 
 
