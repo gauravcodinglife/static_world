@@ -48,7 +48,7 @@ StaticWorld/
 Delivery Method	Latency (Avg)	Load Time	Result
 S3 Direct (Seoul)	High	4.9 min	🐌 Latency Bottleneck
 CloudFront CDN	Low	20.46 s	⚡ Edge Optimized
-Vercel Edge	Low	< 5 s	🚀 Best DX
+Vercel Edge	Low	< 5 s	 Best DX
 
 
 
