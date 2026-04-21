@@ -14,7 +14,7 @@ View Live Website
 1. The AWS Pipeline (Infrastructure Focus)
 To simulate a production-grade environment, I configured a manual delivery pipeline in the ap-northeast-2 (Seoul) region.
 
-Storage: Amazon S3 (Static Website Hosting enabled).
+Storage: Amazon S3 (Static Website Hosting enabled)
 
 Distribution: Amazon CloudFront CDN.
 
