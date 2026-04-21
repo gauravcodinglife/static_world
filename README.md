@@ -1,6 +1,6 @@
 🌐 StaticWorld: High-Performance Static Hosting
 An exploration of modern cloud hosting. This project demonstrates the deployment of a multi-page static site using 
-two distinct architectures: Enterprise Cloud (AWS) and Developer-First Edge (Vercel).
+two distinct architectures: Enterprise Cloud (AWS) and Developer-First Edge (Vercel)
 
 🔗 Live Demo
 View Live Website
