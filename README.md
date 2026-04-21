@@ -12,7 +12,7 @@ View Live Website
 
 🏗️ Architecture Showcase
 1. The AWS Pipeline (Infrastructure Focus)
-To simulate a production-grade environment, I configured a manual delivery pipeline in the ap-northeast-2 (Seoul) region.
+To simulate a production-grade environment, I configured a manual delivery pipeline in the ap-northeast-2 (Seoul) region
 
 Storage: Amazon S3 (Static Website Hosting enabled)
 
