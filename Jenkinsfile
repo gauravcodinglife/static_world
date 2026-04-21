@@ -9,6 +9,12 @@ pipeline {
             }
         }
 
+        stage(Trivy file system scan) {
+            steps {
+                sh 'trivy fs. -o result.json'
+            }
+        }
+
         stage('Build') {
             steps {
                 sh 'docker build -t static_world-app .'
