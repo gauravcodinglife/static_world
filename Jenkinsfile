@@ -1,5 +1,5 @@
 pipeline {
-    agent { labels: "static" }
+    agent { label 'static' }
 
     stages {
 
