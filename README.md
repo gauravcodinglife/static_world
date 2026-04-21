@@ -52,7 +52,7 @@ Vercel Edge	Low	< 5 s	 Best DX
 
 
 
-🛠️ Lessons Learned
+🛠️ Lessons Learned.
 Origin vs. Edge: Understanding how data travels from a bucket in Seoul to a user across the world.
 
 Cache Invalidations: Learning that updating the "source of truth" (S3) doesn't instantly update the "user's view" (CDN) without a cache purge.
