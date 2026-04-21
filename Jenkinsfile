@@ -39,8 +39,11 @@ pipeline {
 
         stage('Deploy') {
             steps {
+                sh "docker stop static_world || true"
+                sh "docker rm static_world || true"
                 sh "docker run -d -p 80:80 --name static_world codinggaurav/static_world-app:latest"
             }
         }
     }
 }
+
